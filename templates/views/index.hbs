@@ -1,0 +1,70 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    {{>headerLinks}}
+  </head>
+
+  <body>
+    {{>navbar}}
+    <!-- main content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 left-div">
+          <P>welcome to weather app</P>
+          <h1 class="my-2">get
+            <span class="text-primary">weather</span>
+            info of your city</h1>
+          <button class="btn btn-warning text-white mt-2">Check Now</button>
+        </div>
+        <div class="col-12 col-md-6 right-div">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/OIP (2).jpeg" class="w-100" alt="img1" />
+              </div>
+              <div class="carousel-item">
+                <img src="./images/OIP (3).jpeg" class="w-100" alt="img2" />
+              </div>
+              <div class="carousel-item">
+                <img src="./images/OIP (4).jpeg" class="w-100" alt="img3" />
+              </div>
+            
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Footer -->
+    {{>footer}}
+  </body>
+
+</html>
