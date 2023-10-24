@@ -37,6 +37,12 @@ body {
   font-size: 1.2rem;
   box-shadow: 0 8px 6px -6px #000;
 }
+.main_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 footer {
   margin-top: auto;
   width: 100%;
@@ -46,4 +52,10 @@ footer p {
   color: aliceblue;
   background-color: #000;
   line-height: 3.5rem;
+}
+
+/* Weather page */
+.data_hide {
+  visibility: hidden;
+  display: none;
 }

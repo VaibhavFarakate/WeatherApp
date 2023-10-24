@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {{>headerLinks}}
+  </head>
+  <body>
+{{>navbar}}
+<div class="container">
+    <div class="row">
+        <div class="d-flex justify-content-center text-center align-items-center bg-info ">
+            <div class="bg-primary">
+            <div class="weatherBox p-3">
+                <form>
+                    <input type="text" id="cityName" placeholder="Enter your city name" autocomplete="off">
+                    <input type="submit" value="search" id="submitBtn">
+                </form>
+            </div>
+            <div class="tempData">
+                <div>
+                    <p id="day">
+                        monday
+                    </p>
+                    <p id="full_date">
+                        20 oct
+                    </p>
+                </div>
+                <div>
+                    <p id="city_name">get output here</p>
+                    <div class="dataToggle data_hide">
+                        <p id="temp"><span>0</span><sup>o</sup>C</p>
+                        <p id="tempStatus"><i class="fa fa-cloud" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+{{>footer}}
+
+<script src="js/main.js">  </script>
+  </body>
+</html>
